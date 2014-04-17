@@ -11,8 +11,11 @@ class BookControllerSpec extends Specification {
 
     def populateValidParams(params) {
         assert params != null
-        // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+
+        params['title'] = 'Jenkinsがチームにもたらしてくれたこと'
+        params['author'] = 'あさの'
+        params['price'] = 0
+
     }
 
     void "Test the index action returns the correct model"() {
