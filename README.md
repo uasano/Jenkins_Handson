@@ -43,12 +43,21 @@ master | phase3と同じ。README.mdが更新されている
 
 ## 共通
 
+### ソースコードをGithubから取得する
+
 Gitリポジトリからソースコードを取得するには、Jenkinsジョブで下記の設定を行います。
 
  1. `ソースコード管理`の`Git`にチェック
  1. `Repositories`の`Repository URL`に`git@github.com:uasano/Jenkins_Handson.git`を入力
  1. `Branches to build`でビルド対象としたいブランチ名を指定。
   * phase1の場合 `*/phase1`
+
+### Jenkinsのジョブからシェルを実行する
+
+Jenkinsのビルドでシェルを実行するには、Jenkinsジョブで下記の設定を行います。
+
+ 1. `ビルド`の`ビルド手順の追加`から`シェルの実行`を選択。(Windows上のサーバで動いている場合は`Windowsバッチコマンドの実行`)
+ 1. `シェルスクリプト`のテキストボックスに実行したいコマンドを入力
 
 ## ビルドジョブ
 
