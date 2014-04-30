@@ -12,6 +12,36 @@ Jenkinsハンズオンの手引です。
  1. ビルドジョブとデプロイジョブのジョブ実行の流れをビルドパイプラインで見える化する
  1. デプロイジョブの前にアプリのテストを実行して、テストに失敗した時はデプロイジョブの実行しないようにする
 
+# 演習で使用するJenkinsの環境
+
+演習で使用するJenkinsは私のPC上で動作させています。
+マシンの環境は下記の通りです。
+
+## Jenkins環境
+
+`JDK7u55`をインストールして、ApacheとTomcat7をajpで連携させて、Tomcat7のwebappsディレクトリの下にjenkins.warをデプロイしてました。
+(インストール方法はググると各OS向けの方法が出てくるのでググってください...)
+
+## Jenkinsのplugin
+
+演習の内容に関係するPluginは以下の物です。
+
+* Build Pipeline Plugin
+* CloudBees Folders Plugin
+* GIT client Plugin
+* GIT plugin
+* HTML Publisher plugin
+* xUnit plugin
+
+## その他
+
+Jenkins(というか、Tomcat)を実行しているユーザで、以下のコマンドが実行できるようにしていました。
+
+* grails (バージョンは2.3.7)
+* heroku (heroku-toolbelt/3.6.0)
+
+多分これで演習に使ったのと同じJenkinsが作れるはず…
+
 # テンプレートJobの情報
 
 「ここの部分が気になるので先にそこから試したい」という場合は、それぞれの個別のジョブを作っているので以下の手順でコピーしてください。
