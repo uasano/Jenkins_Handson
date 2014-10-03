@@ -1,5 +1,6 @@
 Jenkins_Handson
 ===============
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/uasano/Jenkins_Handson?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # 第5回ゆるぎー Jenkinsハンズオン 資料
 
